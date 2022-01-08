@@ -29,9 +29,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="200dp"
+                    android:layout_alignParentTop="true"
                     android:gravity="center"
                     android:textColor="@color/white"
                     android:textSize="16sp"
+                    android:padding="16dp"
                     tools:text="El texto guardado es: Pepe" />
 
                 <EditText
@@ -45,7 +47,7 @@
                     android:layout_marginStart="115dp"
                     android:layout_marginEnd="115dp"
                     android:inputType="text"
-                    android:hint="@string/escribe_aqu"
+                    android:hint="@string/t_write_here"
                     android:textColorHint="@color/white"
                     android:importantForAutofill="no" />
 
@@ -58,7 +60,7 @@
                     android:layout_alignEnd="@+id/edit_save"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/purple_500"
-                    android:text="@string/guardar_info" />
+                    android:text="@string/b_save_info" />
 
                 <Button
                     android:id="@+id/launch_activity"
@@ -71,7 +73,7 @@
                     android:layout_alignParentStart="true"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/purple_500"
-                    android:text="@string/lanzar_activity" />
+                    android:text="@string/b_launch_activity" />
 
             </RelativeLayout>
         </ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Desafio Bootcamp semana 10 Enero</string>
+    <string name="b_save_info">GUARDAR INFO</string>
+    <string name="b_launch_activity">LANZAR ACTIVITY</string>
+    <string name="t_write_here">Escribe aquí</string>
+    <string name="text_viewed">El texto guardado es: %s</string>
+</resources>

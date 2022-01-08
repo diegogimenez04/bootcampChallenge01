@@ -3,7 +3,6 @@ package com.example.desafiobootcampsemana10enero
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.desafiobootcampsemana10enero.databinding.ActivityMainBinding
 
@@ -17,12 +16,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.editSave.text.clear()
+
         val viewModel:MainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding.mainViewModel = viewModel
         viewModel.savedTextLiveData.observe(this, {
             savedTextValue: String ->
             savedText = savedTextValue
-            binding.savedText.text = "El texto guardado es: $savedTextValue"
+            binding.savedText.text = getString(R.string.text_viewed, savedTextValue)
         })
 
         binding.saveInfo.setOnClickListener {

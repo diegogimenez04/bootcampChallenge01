@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Desafio Bootcamp semana 10 Enero</string>
-    <string name="guardar_info">GUARDAR INFO</string>
-    <string name="lanzar_activity">LANZAR ACTIVITY</string>
-    <string name="escribe_aqu">Escribe aquí</string>
+    <string name="app_name">Bootcamp Challenge 10 January</string>
+    <string name="b_save_info">SAVE INFO</string>
+    <string name="b_launch_activity">LAUNCH ACTIVITY</string>
+    <string name="t_write_here">Write here</string>
+    <string name="text_viewed">The saved text is: %s</string>
 </resources>
