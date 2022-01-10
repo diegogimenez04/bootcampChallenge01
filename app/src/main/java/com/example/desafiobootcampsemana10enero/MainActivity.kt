@@ -11,12 +11,15 @@ class MainActivity : AppCompatActivity() {
     private var savedText = ""
     private lateinit var binding: ActivityMainBinding
 
+    override fun onResume() {
+        super.onResume()
+        binding.editSave.text.clear()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.editSave.text.clear()
 
         val viewModel:MainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding.mainViewModel = viewModel
