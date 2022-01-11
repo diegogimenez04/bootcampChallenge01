@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
             binding.savedText.text = getString(R.string.text_viewed, savedTextValue)
         })
 
-        binding.saveInfo.setOnClickListener {
+        /*binding.saveInfo.setOnClickListener {
             viewModel.saveText(binding.editSave.text.toString())
-        }
+        }*/
 
         binding.launchActivity.setOnClickListener {
             openDetails(savedText)

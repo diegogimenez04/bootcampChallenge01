@@ -5,8 +5,8 @@
     <data>
         <variable
             name="mainViewModel"
-            type="com.example.desafiobootcampsemana10enero.MainViewModel"
-            />
+            type="com.example.desafiobootcampsemana10enero.MainViewModel"/>
+        <import type="android.view.View"/>
     </data>
 
     <LinearLayout
@@ -60,7 +60,8 @@
                     android:layout_alignEnd="@+id/edit_save"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/purple_500"
-                    android:text="@string/b_save_info" />
+                    android:text="@string/b_save_info"
+                    android:onClick="@{() -> mainViewModel.saveText(editSave.getText().toString())}"/>
 
                 <Button
                     android:id="@+id/launch_activity"
